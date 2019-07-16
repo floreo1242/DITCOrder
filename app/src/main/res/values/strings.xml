@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">DITCOrder</string>
+    <string name="name">이름</string>
+    <string name="phone">전화번호</string>
+    <string name="toFirst">처음으로</string>
+    <string name="complete">완료</string>
 </resources>

@@ -9,7 +9,14 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".TimeSelectActivity">
+        <activity android:name=".FinishActivity"
+            android:parentActivityName=".InformationActivity">
+        </activity>
+        <activity android:name=".InformationActivity"
+            android:parentActivityName=".TimeSelectActivity">
+        </activity>
+        <activity android:name=".TimeSelectActivity"
+            android:parentActivityName=".MainActivity">
         </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
