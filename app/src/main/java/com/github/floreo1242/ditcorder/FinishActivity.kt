@@ -7,6 +7,8 @@ import kotlinx.android.synthetic.main.activity_finish.*
 
 class FinishActivity : AppCompatActivity() {
 
+    private var orderVal: Int = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_finish)
@@ -31,6 +33,12 @@ class FinishActivity : AppCompatActivity() {
         nameTextView.text = intent.getStringExtra("name")
         phoneTextView.text = intent.getStringExtra("phone")
 
+        loadData()
+        orderVal++
+        saveData(orderVal)
+
+        orderTextView.text = String.format(getString(R.string.orderNumber), orderVal)
+
         toFirstButton.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
@@ -42,5 +50,18 @@ class FinishActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
 //        super.onBackPressed()
+    }
+
+    private fun saveData(order: Int) {
+        val pref = getPreferences(0)
+        val editor = pref.edit()
+
+        editor.putInt("KEY_ORDER", order).apply()
+    }
+
+    private fun loadData() {
+        val pref = getPreferences(0)
+        val order = pref.getInt("KEY_ORDER", 0)
+        orderVal = order
     }
 }
