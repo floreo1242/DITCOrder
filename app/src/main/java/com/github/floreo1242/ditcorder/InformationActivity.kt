@@ -23,4 +23,8 @@ class InformationActivity : AppCompatActivity() {
             )
         }
     }
+
+    override fun onBackPressed() {
+//        super.onBackPressed()
+    }
 }

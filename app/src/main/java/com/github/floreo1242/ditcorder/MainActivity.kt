@@ -13,23 +13,27 @@ class MainActivity : AppCompatActivity() {
 
         lolImageView.setOnClickListener {
             startActivity<TimeSelectActivity>(
-                "game" to "lol"
+                "game" to "game1"
             )
         }
         tekkenImageView.setOnClickListener {
             startActivity<TimeSelectActivity>(
-                "game" to "tekken"
+                "game" to "game2"
             )
         }
         fifaImageView.setOnClickListener {
             startActivity<TimeSelectActivity>(
-                "game" to "fifa"
+                "game" to "game3"
             )
         }
         pubgImageView.setOnClickListener {
             startActivity<TimeSelectActivity>(
-                "game" to "pubg"
+                "game" to "game4"
             )
         }
+    }
+
+    override fun onBackPressed() {
+//        super.onBackPressed()
     }
 }

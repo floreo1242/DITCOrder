@@ -6,33 +6,56 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".TimeSelectActivity">
+
     <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp" app:srcCompat="@drawable/ic_access_time_black_24dp"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            android:id="@+id/m15ImageView" app:layout_constraintHorizontal_bias="0.25"
-            app:layout_constraintVertical_bias="0.25"/>
+        android:id="@+id/op1ImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/stringValue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        app:srcCompat="@drawable/ic_access_time_black_24dp" />
+
     <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp" app:srcCompat="@drawable/ic_access_time_black_24dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.75"
-            app:layout_constraintVertical_bias="0.25" android:id="@+id/game1ImageView"/>
+        android:id="@+id/op2ImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/stringValue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        app:srcCompat="@drawable/ic_access_time_black_24dp" />
+
     <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp" app:srcCompat="@drawable/ic_access_time_black_24dp"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            android:id="@+id/m30ImageView" app:layout_constraintHorizontal_bias="0.25"
-            app:layout_constraintVertical_bias="0.75"/>
+        android:id="@+id/op3ImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/stringValue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75"
+        app:srcCompat="@drawable/ic_access_time_black_24dp" />
+
     <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp" app:srcCompat="@drawable/ic_access_time_black_24dp"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            android:id="@+id/game2ImageView" app:layout_constraintHorizontal_bias="0.75"
-            app:layout_constraintVertical_bias="0.75"/>
+        android:id="@+id/op4ImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/stringValue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75"
+        app:srcCompat="@drawable/ic_access_time_black_24dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

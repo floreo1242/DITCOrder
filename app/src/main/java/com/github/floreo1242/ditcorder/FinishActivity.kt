@@ -13,25 +13,23 @@ class FinishActivity : AppCompatActivity() {
 
         val game = intent.getStringExtra("game")
         val time = intent.getStringExtra("time")
-        val name = intent.getStringExtra("name")
-        val phone = intent.getStringExtra("phone")
 
         when (game) {
-            "lol" -> gameTextView.text = "리그오브레전드"
-            "tekken" -> gameTextView.text = "철권"
-            "fifa" -> gameTextView.text = "피파"
-            "pubg" -> gameTextView.text = "배틀그라운드"
+            "game1" -> gameTextView.text = getString(R.string.game1)
+            "game2" -> gameTextView.text = getString(R.string.game2)
+            "game3" -> gameTextView.text = getString(R.string.game3)
+            "game4" -> gameTextView.text = getString(R.string.game4)
         }
 
         when (time) {
-            "15m" -> timeTextView.text = "15분"
-            "30m" -> timeTextView.text = "30분"
-            "1g" -> timeTextView.text = "1판"
-            "2g" -> timeTextView.text = "2판"
+            "op1" -> timeTextView.text = getString(R.string.option1)
+            "op2" -> timeTextView.text = getString(R.string.option2)
+            "op3" -> timeTextView.text = getString(R.string.option3)
+            "op4" -> timeTextView.text = getString(R.string.option4)
         }
 
-        nameTextView.setText(name)
-        phoneTextView.setText(phone)
+        nameTextView.text = intent.getStringExtra("name")
+        phoneTextView.text = intent.getStringExtra("phone")
 
         toFirstButton.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
@@ -40,5 +38,9 @@ class FinishActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+    }
+
+    override fun onBackPressed() {
+//        super.onBackPressed()
     }
 }

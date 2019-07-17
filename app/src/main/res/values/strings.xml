@@ -4,4 +4,13 @@
     <string name="phone">전화번호</string>
     <string name="toFirst">처음으로</string>
     <string name="complete">완료</string>
+    <string name="game1">리그오브레전드</string>
+    <string name="game2">철권</string>
+    <string name="game3">피파</string>
+    <string name="game4">배틀그라운드</string>
+    <string name="option1">15분</string>
+    <string name="option2">30분</string>
+    <string name="option3">45분</string>
+    <string name="option4">60분</string>
+    <string name="stringValue">이미지가 열리지 않습니다.</string>
 </resources>

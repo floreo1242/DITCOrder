@@ -13,29 +13,33 @@ class TimeSelectActivity : AppCompatActivity() {
 
         val game = intent.getStringExtra("game")
 
-        m15ImageView.setOnClickListener {
+        op1ImageView.setOnClickListener {
             startActivity<InformationActivity>(
                 "game" to game,
-                "time" to "15m"
+                "time" to "op1"
             )
         }
-        m30ImageView.setOnClickListener {
+        op2ImageView.setOnClickListener {
             startActivity<InformationActivity>(
                 "game" to game,
-                "time" to "30m"
+                "time" to "op2"
             )
         }
-        game1ImageView.setOnClickListener {
+        op3ImageView.setOnClickListener {
             startActivity<InformationActivity>(
                 "game" to game,
-                "time" to "1g"
+                "time" to "op3"
             )
         }
-        game2ImageView.setOnClickListener {
+        op4ImageView.setOnClickListener {
             startActivity<InformationActivity>(
                 "game" to game,
-                "time" to "2g"
+                "time" to "op4"
             )
         }
+    }
+
+    override fun onBackPressed() {
+//        super.onBackPressed()
     }
 }

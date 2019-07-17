@@ -6,33 +6,56 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
+
     <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp" app:srcCompat="@drawable/ic_videogame_asset_black_24dp"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            android:id="@+id/lolImageView" app:layout_constraintHorizontal_bias="0.25"
-            app:layout_constraintVertical_bias="0.25"/>
+        android:id="@+id/lolImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/stringValue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        app:srcCompat="@drawable/ic_videogame_asset_black_24dp" />
+
     <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp" app:srcCompat="@drawable/ic_videogame_asset_black_24dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.75"
-            app:layout_constraintVertical_bias="0.25" android:id="@+id/tekkenImageView"/>
+        android:id="@+id/tekkenImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/stringValue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        app:srcCompat="@drawable/ic_videogame_asset_black_24dp" />
+
     <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp" app:srcCompat="@drawable/ic_videogame_asset_black_24dp"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            android:id="@+id/fifaImageView" app:layout_constraintHorizontal_bias="0.25"
-            app:layout_constraintVertical_bias="0.75"/>
+        android:id="@+id/fifaImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/stringValue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75"
+        app:srcCompat="@drawable/ic_videogame_asset_black_24dp" />
+
     <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp" app:srcCompat="@drawable/ic_videogame_asset_black_24dp"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            android:id="@+id/pubgImageView" app:layout_constraintHorizontal_bias="0.75"
-            app:layout_constraintVertical_bias="0.75"/>
+        android:id="@+id/pubgImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/stringValue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75"
+        app:srcCompat="@drawable/ic_videogame_asset_black_24dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
